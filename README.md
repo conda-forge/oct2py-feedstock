@@ -5,7 +5,7 @@ Home: http://github.com/blink1073/oct2py
 
 Package license: MIT
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Python to GNU Octave bridge --> run m-files from python
 
