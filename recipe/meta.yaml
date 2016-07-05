@@ -1,4 +1,4 @@
-{% set version = "3.5.7" %}
+{% set version = "3.5.9" %}
 
 package:
     name: oct2py
@@ -7,7 +7,7 @@ package:
 source:
     fn: oct2py-{{ version }}.tar.gz
     url: https://github.com/blink1073/oct2py/archive/v{{ version }}.tar.gz
-    sha256: 8dd44cecc3aa762de5d643028be4ddcaa8377488de1403cff1ce51ffa34e9258
+    sha256: f58a92afce6d350a5728e711cf8e6422b5e97426ecffea185a33c1983c0ebfb2
 
 build:
     number: 0
