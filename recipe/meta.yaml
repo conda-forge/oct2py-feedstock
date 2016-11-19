@@ -6,8 +6,8 @@ package:
 
 source:
     fn: oct2py-{{ version }}.tar.gz
-    url: https://github.com/blink1073/oct2py/archive/v{{ version }}.tar.gz
-    sha256: 50948156f71ef455cb7d9225bc2a6bc21a6456d26baf8174cc6f4a0c22f2a0b6
+    url: https://pypi.io/packages/source/o/oct2py/oct2py-{{ version }}.tar.gz
+    sha256: 2f2c73e29a784ac85abbddd3c73ac6bac05dfb770f9c132dfefd65056db4a43e
 
 build:
     number: 0
