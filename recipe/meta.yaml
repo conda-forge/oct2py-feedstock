@@ -22,7 +22,7 @@ requirements:
         - numpy
         - scipy
         - ipython
-        - octave_kernel >= 0.19.14
+        - octave_kernel >=0.19.14
 
 about:
     home: http://github.com/blink1073/oct2py
