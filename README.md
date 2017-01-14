@@ -7,7 +7,7 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: Python to GNU Octave bridge --> run m-files from python
+Summary: Python to GNU Octave bridge --> run m-files from python.
 
 
 
