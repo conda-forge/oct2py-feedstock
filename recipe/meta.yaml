@@ -1,35 +1,36 @@
 {% set version = "3.8.1" %}
 
 package:
-    name: oct2py
-    version: {{ version }}
+  name: oct2py
+  version: {{ version }}
 
 source:
-    fn: oct2py-{{ version }}.tar.gz
-    url: https://pypi.io/packages/source/o/oct2py/oct2py-{{ version }}.tar.gz
-    sha256: 158ee7ba9d018bd5dba59e60766c7cb736c43cb79d066ba630ae685d9e46eb05
+  fn: oct2py-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/o/oct2py/oct2py-{{ version }}.tar.gz
+  sha256: 158ee7ba9d018bd5dba59e60766c7cb736c43cb79d066ba630ae685d9e46eb05
 
 build:
-    number: 0
-    script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 0
+  script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
-    build:
-        - python
-        - setuptools
-    run:
-        - python
-        - numpy
-        - scipy
-        - ipython
-        - octave_kernel >=0.19.14
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - numpy
+    - scipy
+    - ipython
+    - octave_kernel >=0.19.14
 
 about:
-    home: http://github.com/blink1073/oct2py
-    license: MIT
-    summary: Python to GNU Octave bridge --> run m-files from python
+  home: http://github.com/blink1073/oct2py
+  license: MIT
+  license_file: LICENSE.txt
+  summary: 'Python to GNU Octave bridge --> run m-files from python.'
 
 extra:
-    recipe-maintainers:
-        - blink1073
-        - ocefpaf
+  recipe-maintainers:
+    - blink1073
+    - ocefpaf
