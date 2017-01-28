@@ -1,4 +1,4 @@
-{% set version = "3.8.1" %}
+{% set version = "3.9.1" %}
 
 package:
   name: oct2py
@@ -7,7 +7,7 @@ package:
 source:
   fn: oct2py-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/o/oct2py/oct2py-{{ version }}.tar.gz
-  sha256: 158ee7ba9d018bd5dba59e60766c7cb736c43cb79d066ba630ae685d9e46eb05
+  sha256: a890d5ada9ba90fedbe0035b34951695b7af09e710581e15862fcfd6c5d075c1
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
     - numpy
     - scipy
     - ipython
-    - octave_kernel >=0.19.14
+    - octave_kernel >=0.25.0
 
 about:
   home: http://github.com/blink1073/oct2py
