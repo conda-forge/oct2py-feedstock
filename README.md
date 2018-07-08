@@ -14,14 +14,15 @@ Summary: Python to GNU Octave bridge --> run m-files from python.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/oct2py-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/oct2py-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/oct2py-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/oct2py-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/oct2py-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/oct2py-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/oct2py-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/oct2py-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/oct2py/badges/version.svg)](https://anaconda.org/conda-forge/oct2py)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/oct2py/badges/downloads.svg)](https://anaconda.org/conda-forge/oct2py)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-oct2py-green.svg)](https://anaconda.org/conda-forge/oct2py) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/oct2py.svg)](https://anaconda.org/conda-forge/oct2py) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/oct2py.svg)](https://anaconda.org/conda-forge/oct2py) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/oct2py.svg)](https://anaconda.org/conda-forge/oct2py) |
 
 Installing oct2py
 =================
@@ -66,6 +67,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
