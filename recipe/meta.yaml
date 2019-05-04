@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
@@ -24,7 +24,7 @@ requirements:
     - numpy
     - scipy
     - ipython
-    - octave_kernel >=0.25.0
+    - octave_kernel >=0.30.0
 
 about:
   home: http://github.com/blink1073/oct2py
