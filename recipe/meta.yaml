@@ -1,4 +1,4 @@
-{% set version = "5.0.0" %}
+{% set version = "5.0.1" %}
 
 package:
   name: oct2py
@@ -7,11 +7,11 @@ package:
 source:
   fn: oct2py-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/o/oct2py/oct2py-{{ version }}.tar.gz
-  sha256: 0b808d870b4ebbe9c5063e6a540fa9535796470c9711e4a7736186096929a87b
+  sha256: 39ce4d3612424dfeb7e6aa383b7e59c3fa25e9f30e1808d8bed1bee64f2f6fa2
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
