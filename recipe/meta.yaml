@@ -1,4 +1,4 @@
-{% set version = "5.0.4" %}
+{% set version = "5.2.0" %}
 
 package:
   name: oct2py
@@ -7,12 +7,12 @@ package:
 source:
   fn: oct2py-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/o/oct2py/oct2py-{{ version }}.tar.gz
-  sha256: ce3b2235698faed3811434928239bc90c9c26efdd6c6a5c7391749cf26cbd71f
+  sha256: 7e7f03724d60745b6ff49760027712a5ae22ed3c67f8d4560ba8a80c2ebdfaf0
 
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -30,7 +30,7 @@ about:
   home: http://github.com/blink1073/oct2py
   license: MIT
   license_file: LICENSE.txt
-  summary: 'Python to GNU Octave bridge --> run m-files from python.'
+  summary: Python to GNU Octave bridge --> run m-files from python.
 
 extra:
   recipe-maintainers:
