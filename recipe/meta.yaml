@@ -18,13 +18,14 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - numpy
     - setuptools
   run:
     - python >=3.6
     - numpy
     - scipy
     - ipython
-    - octave_kernel >=0.31.0
+    - octave_kernel >=0.34.0
 
 about:
   home: http://github.com/blink1073/oct2py
