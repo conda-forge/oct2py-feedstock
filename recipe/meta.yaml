@@ -19,6 +19,9 @@ requirements:
     - pip
     - python >=3.6
     - numpy
+    - scipy
+    - ipython
+    - octave_kernel >=0.34.0
     - setuptools
   run:
     - python >=3.6
