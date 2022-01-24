@@ -1,4 +1,4 @@
-{% set version = "5.4.2" %}
+{% set version = "5.4.3" %}
 
 package:
   name: oct2py
@@ -7,7 +7,7 @@ package:
 source:
   fn: oct2py-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/o/oct2py/oct2py-{{ version }}.tar.gz
-  sha256: 6b78427c7a3b4b488ca49775fcd0cf57c1e4ab8957be804734aa4720f9b658c4
+  sha256: 92311451b35750559776bfdf1344cd55ed7a66add8a16d03623bd55bf0cbd0e8
 
 build:
   noarch: python
