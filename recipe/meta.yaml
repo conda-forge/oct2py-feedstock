@@ -22,7 +22,7 @@ requirements:
     - scipy
     - ipython
     - octave_kernel >=0.34.0
-    - setuptools
+    - hatchling
   run:
     - python >=3.6
     - numpy
