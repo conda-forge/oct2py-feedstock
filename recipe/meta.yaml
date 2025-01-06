@@ -29,6 +29,10 @@ requirements:
     - scipy
     - ipython
     - octave_kernel >=0.34.0
+  test:
+    - python {{ python_min }}
+    imports:
+      - oct2py
 
 about:
   home: http://github.com/blink1073/oct2py
