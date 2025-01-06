@@ -11,20 +11,20 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - numpy
     - scipy
     - ipython
     - octave_kernel >=0.34.0
     - hatchling
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - numpy
     - scipy
     - ipython
