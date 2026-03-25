@@ -1,0 +1,52 @@
+schema_version: 1
+
+context:
+  python_min: "3.11"
+  version: "6.0.0"
+
+package:
+  name: oct2py
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/o/oct2py/oct2py-${{ version }}.tar.gz
+  sha256: 915073fcd9f97b28cbc30527f3b7651dacc8e15a94299968e764cbc0165851e1
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - poetry-core >=2.0.0
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - numpy >=1.25.0
+    - scipy >=1.17.1
+    - octave_kernel >=1.0
+    - pydantic-settings >=2.0
+    - tornado >=6.5.5
+
+tests:
+  - python:
+      imports:
+        - oct2py
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
+about:
+  summary: Python to GNU Octave bridge --> run m-files from python.
+  license: MIT
+  license_file: LICENSE.txt
+  homepage: https://github.com/blink1073/oct2py
+  documentation: https://blink1073.github.io/oct2py
+
+extra:
+  recipe-maintainers:
+    - blink1073
+    - ocefpaf
