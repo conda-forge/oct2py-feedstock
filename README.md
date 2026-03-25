@@ -3,11 +3,13 @@ About oct2py-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/oct2py-feedstock/blob/main/LICENSE.txt)
 
-Home: http://github.com/blink1073/oct2py
+Home: https://github.com/blink1073/oct2py
 
 Package license: MIT
 
 Summary: Python to GNU Octave bridge --> run m-files from python.
+
+Documentation: https://blink1073.github.io/oct2py
 
 Current build status
 ====================
