@@ -24,9 +24,10 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
+    - metakernel >=1.0.6
     - numpy >=1.25.0
     - scipy >=1.17.1
-    - octave_kernel >=1.0
+    - octave_kernel >=1.1.1
     - pydantic-settings >=2.0
     - tornado >=6.5.5
 
