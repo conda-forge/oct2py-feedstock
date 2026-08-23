@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   python_min: "3.11"
-  version: "6.0.4"
+  version: "6.1.1"
 
 package:
   name: oct2py
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/o/oct2py/oct2py-${{ version }}.tar.gz
-  sha256: cd6d89f7f4477c5c78e7ef107f8e370d26a4eef6d4bc7b85feeff3b15e6c6d99
+  sha256: a7badb0294be3ab1cf3caf646049e70ae2fbff0805b5cd2b06d7b09cf5378695
 
 build:
   number: 0
